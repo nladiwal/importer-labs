@@ -19,5 +19,8 @@
       ]
     }
   },
-  "postCreateCommand": "gh extension install github/gh-actions-importer || echo 'Could not auto-build. Skipping.' "
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "postCreateCommand": "gh extension install github/gh-actions-importer"
 }
